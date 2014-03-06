@@ -1,0 +1,64 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta http-equiv="Content-type" content="text/html; charset=utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+<meta name="apple-mobile-web-app-capable" content="yes" />
+<link rel="stylesheet" type="text/css" href="css/icons.css" />
+<link rel="stylesheet" type="text/css" href="css/af.ui.css"  />
+<link rel="stylesheet" type="text/css" href="css/style.css"  />
+<script type="text/javascript" charset="utf-8" src="ui/appframework.ui.min.js"></script>
+<script type="text/javascript" charset="utf-8" src="plugins/af.scroller.js"></script>
+<script type="text/javascript" charset="utf-8" src="js/init.js"></script>
+ <script type="text/javascript" src="cordova.js"></script>
+<title>your xul</title>
+</head>	
+
+
+   <body>
+        <div id="afui" class="ios7" style="background:#fff;">
+            <div id="content">
+                <!-- 主页面 -->
+                <div title='Welcome' id="main" class="panel" selected="true"  data-header='none'>
+                	<div id="head_wrapper">
+                        <img src="images/head_bg4.png"	/>
+                       
+             		</div>
+             		<form id="search_form">
+                        <input type="text" name="search_box" id="search_box"/><a class="icon magnifier mini"></a>
+                    </form>
+                    <ul class="list" id="list" >
+
+					</ul>
+                </div>
+                <!--详情页面-->
+                <div title="" id="people"  class="panel people">
+                	  <ul class="list" >
+                      	  <li>
+                             <a class="icon user big"><span class="name"></span></a>
+                            
+                          </li>
+                          <li>
+                             <a class="icon phone big">电话：<span class="phone"> </span></a>       
+                          </li>
+                          <li><a class="icon location big ">学校：<span class="location"></span></a></li>
+                          <li><a class="icon chat big">QQ：<span class="chat"></span></a></li>
+                          <li><a  class="icon tag big weibo"><span>weibo：<span class="weibo"></span></span></a></li>
+                      </ul>
+      				   <div class="bt_g ">
+                          <a href="tel:+13560387458" class="button call">打电话</a>
+                          <a href="sms:13764567708" data-ignore="true"  class="button msg">发短信</a>
+                          <a href="sms:13764567708" class="button save">保存联系人</a>
+                       </div>
+                </div>
+               
+            </div>
+            <!-- bottom navbar. Add additional tabs here -->
+            <div id="navbar">
+                <a href="#main" id='navbar_home' class='icon home'>home</a>
+            </div>
+          
+        </div>
+    </body>
+</html>
